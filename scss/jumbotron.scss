@@ -1,0 +1,66 @@
+.jumbotron {
+    background-color: $blue-1;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    .headline {
+        margin: 10% auto 0;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+
+        h1, h2 {
+            margin: 0;
+            color: #fff;
+            animation: anaglyph 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        h1, h2, span {
+            float: left;
+            letter-spacing: 3px;
+            text-align: center;
+            text-transform: lowercase;
+            width: 100%;
+        }
+        
+        h1 {
+            font-size: 5vw;
+            animation-delay: 1.75s
+        }
+        
+        h2 {
+            font-size: 2vw;
+            animation-delay: 2s
+        }
+        
+        span {
+            margin: 2.5% 0 0 0;
+            cursor: pointer;
+            color: #fff;
+            font-size: 1vw;
+            text-shadow: none;
+            transition: all 1s ease-in-out;
+
+            &:hover {
+                text-shadow: -3px 0 1px #1ef2f1 , 3px 0 1px #f6050a;
+                color: #333;
+            }
+        }
+    }
+}
+
+
+
+@keyframes anaglyph {
+    0% {
+        text-shadow: none;
+        color: #fff;
+    }
+    100% {
+        text-shadow: -3px 0 1px #1ef2f1 , 3px 0 1px #f6050a;
+        color: #333;
+    }
+  }
